@@ -51,6 +51,14 @@ section{padding-block:clamp(48px,7vw,84px)}
 .pics figure{position:relative;aspect-ratio:3/4;overflow:hidden;background:#0c1524}
 .pics img{width:100%;height:100%;object-fit:cover;object-position:50% 25%;user-select:none;-webkit-user-drag:none}
 .pics .v{object-position:50% 35%}
+.pics.p figure{aspect-ratio:426/552}
+.pics.p img{position:absolute;top:0;left:0;width:230.75%;max-width:none;height:auto}
+.pics.p figure.r img{left:-106.1%}
+.pics.st{grid-template-columns:1fr}
+.pics.st figure{aspect-ratio:800/427}
+.pics.st img{position:absolute;left:0;top:-1.873%;width:100%;max-width:none;height:auto}
+.pics.st figure.r img{top:-104.68%}
+.tag{pointer-events:none}
 .tag{position:absolute;left:8px;bottom:8px;padding:4px 9px;border-radius:999px;background:rgba(11,18,32,.82);font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--cream2)}
 .tag.on{background:var(--ac);color:#fff}
 .info{padding:14px 16px 16px}
@@ -200,14 +208,26 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
     </article>
 
     <article class="ba">
-      <div class="pics">
-        <figure><img src="src/img/antesporto2.jpeg" alt="Antes: cabelo volumoso e pele com marcas" loading="lazy" decoding="async"><span class="tag">Antes</span></figure>
-        <figure><img src="src/img/depoisporto2.jpeg" alt="Depois: cabelo modelado e rosto mais definido" loading="lazy" decoding="async"><span class="tag on">Depois</span></figure>
+      <div class="pics p">
+        <figure><img src="src/img/antesedepois2.jpeg" alt="Antes: franja reta, laterais raspadas e rosto sem barba" loading="lazy" decoding="async"><span class="tag">Antes</span></figure>
+        <figure class="r"><img src="src/img/antesedepois2.jpeg" alt="Depois: cabelo com textura, barba aparada e perfil mais marcado" loading="lazy" decoding="async"><span class="tag on">Depois</span></figure>
       </div>
       <div class="info">
-        <h3>Rosto mais definido</h3>
-        <ul class="chips"><li>Cabelo modelado</li><li>Pele mais lisa</li><li>Contorno do rosto</li></ul>
-        <p><b>Antes:</b> cabelo volumoso sem direção, espinhas e marcas visíveis. <b>Depois:</b> corte com forma, pele mais uniforme e mandíbula mais marcada.</p>
+        <h3>Cabelo + barba + perfil</h3>
+        <ul class="chips"><li>Corte e textura</li><li>Barba</li><li>Perfil do rosto</li></ul>
+        <p><b>Antes:</b> franja reta pesada, laterais raspadas e rosto sem barba. <b>Depois:</b> cabelo com movimento e textura, barba aparada e queixo e mandíbula mais marcados de lado.</p>
+      </div>
+    </article>
+
+    <article class="ba">
+      <div class="pics st">
+        <figure><img src="src/img/olhos1.jpeg" alt="Antes: região dos olhos" loading="lazy" decoding="async"><span class="tag">Antes</span></figure>
+        <figure class="r"><img src="src/img/olhos1.jpeg" alt="Depois: região dos olhos" loading="lazy" decoding="async"><span class="tag on">Depois</span></figure>
+      </div>
+      <div class="info">
+        <h3>Região dos olhos</h3>
+        <ul class="chips"><li>Pele da região</li><li>Sobrancelha</li><li>Cabelo emoldurando</li></ul>
+        <p><b>Antes:</b> sobrancelha sem definição e pele com marcas ao redor dos olhos. <b>Depois:</b> região mais limpa e uniforme, com o cabelo emoldurando o olhar.</p>
       </div>
     </article>
   </div>
