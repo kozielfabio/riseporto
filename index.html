@@ -103,6 +103,45 @@ section{padding-block:clamp(48px,7vw,84px)}
 .bonus p{font-size:13.5px;line-height:1.5;color:var(--mut)}
 @media(min-width:640px){.grid.c2{grid-template-columns:1fr 1fr}}
 
+/* PRÉVIA DA ÁREA DE MEMBROS */
+.mb{background:radial-gradient(60% 45% at 50% 0,rgba(91,141,239,.2),transparent 70%),radial-gradient(50% 40% at 100% 100%,rgba(61,111,212,.15),transparent 70%),var(--bg)}
+.mb-head{max-width:640px;margin-inline:auto}
+.mb-logo{display:inline-block;font-weight:800;font-size:clamp(4.4rem,21vw,8.2rem);letter-spacing:-.04em;line-height:1;padding:.05em .1em;margin-top:8px;background:linear-gradient(180deg,#B7CDFB 0%,var(--ac) 55%,var(--ac3) 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;filter:drop-shadow(0 6px 28px rgba(91,141,239,.5))}
+.mb-sub{font-size:12px;font-weight:700;letter-spacing:.32em;text-transform:uppercase;color:var(--mut);margin-top:-2px}
+.mb-head .title{margin-top:20px}
+.mb-chips{display:flex;flex-wrap:wrap;justify-content:center;gap:9px;margin-top:22px}
+.mb-chips span{display:inline-flex;align-items:center;gap:7px;padding:8px 14px;border:1px solid rgba(91,141,239,.3);border-radius:999px;background:rgba(91,141,239,.08);font-size:12.5px;font-weight:600;color:var(--ac2)}
+.mb-app{margin-top:34px;text-align:left;background:var(--soft);border:1px solid rgba(91,141,239,.28);border-radius:24px;padding:18px 0 20px;box-shadow:0 30px 70px rgba(0,0,0,.5),0 0 0 6px rgba(91,141,239,.06)}
+.mb-bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:0 18px 16px;border-bottom:1px solid var(--line)}
+.mb-who{display:flex;align-items:center;gap:12px}
+.mb-av{flex:none;width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--ac3),var(--ac));display:grid;place-items:center;font-weight:800;font-size:16px;color:#fff;box-shadow:0 6px 18px rgba(61,111,212,.5)}
+.mb-hello{font-size:15px;font-weight:700;line-height:1.15}
+.mb-hello small{display:block;margin-top:3px;font-size:12px;font-weight:500;color:var(--mut)}
+.mb-pill{font-size:10.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ac2);background:rgba(91,141,239,.12);padding:7px 12px;border-radius:999px;white-space:nowrap}
+.mb-label{display:flex;align-items:center;justify-content:space-between;padding:18px 18px 4px;font-size:15px;font-weight:700}
+.mb-nav{display:flex;gap:8px}
+.mb-arr{width:38px;height:38px;border-radius:50%;border:1px solid var(--line);background:var(--card);color:var(--ac2);cursor:pointer;font-size:18px;line-height:1;display:grid;place-items:center;transition:background .2s,color .2s,opacity .2s}
+@media(hover:hover){.mb-arr:hover:not(:disabled){background:var(--ac);color:#fff}}
+.mb-arr:disabled{opacity:.35;cursor:default}
+.mb-track{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-inline:18px;padding:16px 18px 22px;-webkit-overflow-scrolling:touch;scrollbar-width:none;overscroll-behavior-x:contain;cursor:grab}
+.mb-track::-webkit-scrollbar{display:none}
+.mb-track.drag{cursor:grabbing;scroll-snap-type:none}
+.mb-card{flex:0 0 clamp(172px,58vw,230px);scroll-snap-align:start;aspect-ratio:2/3;border-radius:16px;overflow:hidden;background:var(--card);border:1px solid var(--line);box-shadow:0 14px 34px rgba(0,0,0,.45);transition:transform .35s cubic-bezier(.16,1,.3,1),box-shadow .35s}
+@media(hover:hover){.mb-card:hover{transform:translateY(-5px);box-shadow:0 22px 44px rgba(61,111,212,.35)}}
+.mb-card img{width:100%;height:100%;object-fit:contain;user-select:none;-webkit-user-drag:none;pointer-events:none}
+.mb-more{flex:0 0 clamp(172px,58vw,230px);scroll-snap-align:start;aspect-ratio:2/3;border-radius:16px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:12px;padding:22px 18px;background:linear-gradient(160deg,var(--card),rgba(91,141,239,.14));border:2px dashed rgba(91,141,239,.55)}
+.mb-plus{width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,var(--ac3),var(--ac));color:#fff;font-size:28px;font-weight:300;line-height:1;display:grid;place-items:center;box-shadow:0 10px 24px rgba(61,111,212,.5)}
+.mb-more h3{font-size:17px;line-height:1.2;letter-spacing:-.01em}
+.mb-more p{font-size:12.5px;line-height:1.5;color:var(--mut)}
+@media(min-width:760px){.mb-card,.mb-more{flex-basis:clamp(200px,19vw,235px)}}
+.mb-foot{display:flex;align-items:center;gap:14px;padding:0 18px}
+.mb-prog{flex:1;height:5px;border-radius:999px;background:var(--line);overflow:hidden}
+.mb-prog span{display:block;height:100%;width:12%;border-radius:999px;background:linear-gradient(90deg,var(--ac3),var(--ac2));transition:width .2s}
+.mb-hint{font-size:12px;color:var(--mut);white-space:nowrap}
+.mb-note{max-width:520px;margin:24px auto 0;font-size:14.5px;line-height:1.65;color:var(--mut)}
+.mb-note strong{color:var(--ac2);font-weight:700}
+@media(max-width:560px){.mb-pill,.mb-nav,.mb-hint{display:none}.mb-app{border-radius:20px}}
+
 /* OFERTA */
 .box{max-width:500px;margin:26px auto 0;border:1px solid rgba(91,141,239,.3);border-radius:18px;background:var(--card);padding:30px 20px;text-align:center}
 .box .lab{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ac2);margin-bottom:8px}
@@ -286,6 +325,65 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
   </div>
 </section>
 
+<!-- PRÉVIA DA ÁREA DE MEMBROS -->
+<section class="mb" id="area-de-membros">
+  <div class="wrap center">
+    <div class="mb-head">
+      <div class="eyebrow">Uma prévia do que você vai receber</div>
+      <div class="mb-logo" aria-label="RISE">RISE</div>
+      <div class="mb-sub">sua área de membros</div>
+      <h2 class="title">Cada módulo é um passo pra ser visto.</h2>
+      <p class="lede">Dá uma espiada no que te espera lá dentro. Tudo organizado, direto e fácil de seguir, no seu ritmo, pelo celular ou pelo computador.</p>
+      <div class="mb-chips">
+        <span>● Sequência clara</span>
+        <span>● Celular e computador</span>
+        <span>● Bônus + atualizações</span>
+      </div>
+    </div>
+
+    <div class="mb-app">
+      <div class="mb-bar">
+        <div class="mb-who">
+          <div class="mb-av">R</div>
+          <div class="mb-hello">Bem-vindo ao RISE<small>Seu próximo nível começa aqui</small></div>
+        </div>
+        <span class="mb-pill">Área de membros</span>
+      </div>
+
+      <div class="mb-label">
+        <span>Módulos do método</span>
+        <div class="mb-nav">
+          <button class="mb-arr" id="mbPrev" type="button" aria-label="Módulos anteriores">‹</button>
+          <button class="mb-arr" id="mbNext" type="button" aria-label="Próximos módulos">›</button>
+        </div>
+      </div>
+
+      <div class="mb-track" id="mbTrack">
+        <figure class="mb-card"><img src="src/img/1.png" alt="RISE — Módulo 1" loading="lazy" decoding="async" draggable="false"></figure>
+        <figure class="mb-card"><img src="src/img/2.png" alt="RISE — Módulo 2" loading="lazy" decoding="async" draggable="false"></figure>
+        <figure class="mb-card"><img src="src/img/3.png" alt="RISE — Módulo 3" loading="lazy" decoding="async" draggable="false"></figure>
+        <figure class="mb-card"><img src="src/img/4.png" alt="RISE — Módulo 4" loading="lazy" decoding="async" draggable="false"></figure>
+        <figure class="mb-card"><img src="src/img/5.png" alt="RISE — Módulo 5" loading="lazy" decoding="async" draggable="false"></figure>
+        <figure class="mb-card"><img src="src/img/6.png" alt="RISE — Módulo 6" loading="lazy" decoding="async" draggable="false"></figure>
+        <figure class="mb-card"><img src="src/img/7.png" alt="RISE — Módulo 7" loading="lazy" decoding="async" draggable="false"></figure>
+        <div class="mb-more">
+          <div class="mb-plus">+</div>
+          <h3>E tem muito mais lá dentro</h3>
+          <p>Aulas, protocolos, bônus e atualizações te esperam na área de membros.</p>
+        </div>
+      </div>
+
+      <div class="mb-foot">
+        <div class="mb-prog" aria-hidden="true"><span id="mbBar"></span></div>
+        <span class="mb-hint">Deslize pra ver os módulos →</span>
+      </div>
+    </div>
+
+    <p class="mb-note">O que você viu aqui é só <strong>uma prévia</strong>. O conteúdo completo de cada módulo fica liberado dentro da sua área de membros.</p>
+    <div class="cta"><a href="https://pay.cakto.com.br/r7f962r_1123402?affiliate=gNhCXTp4" class="btn" target="_blank" rel="noopener">Quero entrar no RISE</a></div>
+  </div>
+</section>
+
 <section class="bonuses">
   <div class="wrap center">
     <div class="eyebrow">Bônus inclusos</div>
@@ -394,6 +492,37 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
   function go(d){car.scrollBy({left:d*(cards[0].offsetWidth+12),behavior:'smooth'})}
   document.getElementById('prev').onclick=function(){go(-1)};
   document.getElementById('next').onclick=function(){go(1)};
+
+  // Prévia da área de membros: arrastar, setas e progresso
+  (function(){
+    var t=document.getElementById('mbTrack'),pv=document.getElementById('mbPrev'),nx=document.getElementById('mbNext'),bar=document.getElementById('mbBar');
+    if(!t)return;
+    function step(){var c=t.querySelector('.mb-card');if(!c)return 240;var g=parseFloat(getComputedStyle(t).columnGap)||14;return c.getBoundingClientRect().width+g}
+    function upd(){
+      var max=t.scrollWidth-t.clientWidth,p=max>0?t.scrollLeft/max:1;
+      bar.style.width=(12+p*88)+'%';
+      if(pv)pv.disabled=t.scrollLeft<4;
+      if(nx)nx.disabled=t.scrollLeft>max-4;
+    }
+    t.addEventListener('scroll',upd,{passive:true});
+    window.addEventListener('resize',upd);
+    upd();
+    if(pv)pv.onclick=function(){t.scrollBy({left:-step()*2,behavior:'smooth'})};
+    if(nx)nx.onclick=function(){t.scrollBy({left:step()*2,behavior:'smooth'})};
+    var down=false,sx=0,sl=0;
+    t.addEventListener('pointerdown',function(e){
+      if(e.pointerType!=='mouse')return;
+      down=true;sx=e.clientX;sl=t.scrollLeft;t.classList.add('drag');t.setPointerCapture(e.pointerId);
+    });
+    t.addEventListener('pointermove',function(e){if(down)t.scrollLeft=sl-(e.clientX-sx)});
+    function end(){
+      if(!down)return;
+      down=false;t.classList.remove('drag');
+      var s=step();t.scrollTo({left:Math.round(t.scrollLeft/s)*s,behavior:'smooth'});
+    }
+    t.addEventListener('pointerup',end);
+    t.addEventListener('pointercancel',end);
+  })();
 
   // CTA fixo: aparece depois do hero, some na oferta
   var st=document.getElementById('sticky'),past=false,onOffer=false;
